@@ -1,0 +1,120 @@
+
+
+html, body {
+  overflow-x: hidden;
+  height: 100%;
+}
+body {
+  background: #fff;
+  padding: 0;
+  margin: 0;
+  font-family: 'Varela Round', sans-serif;
+}
+
+
+.header {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 100%;
+  box-shadow: none;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  position: fixed;
+  height: 60px;
+  overflow: hidden;
+  z-index: 10;
+  background: white;
+}
+
+
+#sidebarMenu {
+  height: 100%;
+  position: fixed;
+  left: 0;
+  width: 450px;
+  margin-top: 40px;
+  transform: translateX(-450px);
+  transition: transform 250ms ease-in-out;
+  background: white;
+  border: 1px solid
+}
+#sidebarMenu ul  :hover {
+  background: #000;
+  color: #fff;
+}
+
+
+
+.sidebarMenuInner{
+  margin:0;
+  padding:0;
+  border-top: 1px solid #000;
+}
+.sidebarMenuInner li{
+  list-style: none;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 20px;
+  cursor: pointer;
+  border-bottom: 1px solid #000;
+}
+
+.sidebarMenuInner li a{
+  color: #000;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+
+input[type="checkbox"]:checked ~  #sidebarMenu {
+  transform: translateX(0);
+  height: 100%
+  
+}
+
+
+input[type=checkbox] {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  display: none;
+}
+.sidebarIconToggle {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  cursor: pointer;
+  position: absolute;
+  z-index: 99;
+  height: 100%;
+  width: 100%;
+  top: 22px;
+  left: 15px;
+  height: 22px;
+  width: 22px;
+}
+.title {
+  
+  
+  cursor: pointer;
+  position: relative;
+  z-index: 99;
+  top:  22px;
+  left: 50%;
+  
+}
+
+.image{
+  width: 30%;
+  border: 1px solid  #000;
+  
+}
+@media screen and (max-width: 500px) {
+  .image {
+    width: 100%;
+  }
+}
+
+
+
